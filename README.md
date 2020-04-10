@@ -18,6 +18,7 @@ supervised systemd
 
 ```php
 Type=notify
+ExecStart=/usr/bin/redis-server /etc/redis/redis.conf  --supervised systemd
 ```
 
 **3) Nginx `/etc/nginx/sites-enabled/reverse-proxy.conf`**
